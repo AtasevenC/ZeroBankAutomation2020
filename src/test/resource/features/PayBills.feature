@@ -33,7 +33,7 @@ Feature:  Pay Bills Page
       | Wells Fargo     | Credit Card | 125    |            | book        |
       | Apple           | Brokerage   |        | 2020-08-30 | asdf        |
 
-
+  @wip
   Scenario Outline: Pay operation with invalid Amount
 
     When the user completes a successful Pay operation "<Payee>" "<Account>" "<Amount>" "<Date>" "<Description>"
@@ -46,7 +46,7 @@ Feature:  Pay Bills Page
       | Wells Fargo     | Credit Card | ad54   | 2020-08-30 | book        |
       | Apple           | Brokerage   | +*$    | 2020-08-30 | asdf        |
 
-  @wip
+
   Scenario: Add a new payee
     Given Add New payee tab
     And creates new payee using following information
